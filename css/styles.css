@@ -701,7 +701,11 @@ img {
 }
 
 .modal-form-field {
+  font-weight: 400;
+  font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate-color);
   display: block;
   margin-bottom: 4px;
 }
@@ -738,6 +742,10 @@ img {
   transform: translateY(-50%);
   transition: fill var(--transition);
 }
+
+.formicon-checkbox:focus {
+  fill: var(--iris-color);
+}
 .form-wrapp {
 }
 .username-wrapp {
@@ -746,14 +754,14 @@ img {
   margin-bottom: 16px;
 }
 .modal-comment-field {
-}
-.modal-comment-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.48px;
   color: var(--light-slate-color);
+}
+.modal-comment-label {
 }
 .text-comment {
   width: 100%;
@@ -778,7 +786,15 @@ img {
   margin-bottom: 24px;
 }
 
-.privacy-check:checked + .label-checkbox .checkbox {
+.privacy-check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.privacy-check:checked + .label-checkbox .option-checkbox {
   border: none;
   background-color: var(--ocean-color);
   fill: var(--cloud-color);
@@ -801,6 +817,9 @@ img {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+}
+.option-checkbox:hover {
+  border-color: #9747ff;
 }
 .icon-checkbox {
 }
