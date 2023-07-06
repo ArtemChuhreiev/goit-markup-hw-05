@@ -759,14 +759,7 @@ img {
 .comment-wrap {
   margin-bottom: 16px;
 }
-.modal-comment-field {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.48px;
-  color: var(--light-slate-color);
-}
+
 .modal-comment-label {
 }
 .text-comment {
