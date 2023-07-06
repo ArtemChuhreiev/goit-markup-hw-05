@@ -701,13 +701,11 @@ img {
 }
 
 .modal-form-field {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--light-slate-color);
-  display: block;
-  margin-bottom: 4px;
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  margin-left: 0;
 }
 
 .modal-form-label {
@@ -715,6 +713,11 @@ img {
 .username-wrapp {
   position: relative;
 }
+
+.username-wrapp:focus-within .formicon-checkbox {
+  fill: var(--iris-color);
+}
+
 .input-form {
   display: inline-block;
   justify-content: center;
