@@ -139,10 +139,12 @@ img {
 .header-logo-studio {
   color: var(--navi-blue-color);
 }
+
 .header-list {
   display: flex;
   gap: 40px;
 }
+
 .header-items {
 }
 
